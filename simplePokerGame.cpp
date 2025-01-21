@@ -1,3 +1,7 @@
+//names of group: Kanemoto
+//1/21/25
+//assignment for review of arrays
+
 #include <iostream>
 #include <string>
 #include <cstdlib>
@@ -5,11 +9,13 @@
 
 using namespace std;
 
+//creating constant array values to initialize our cards
 const string SUITS[] = {"Hearts", "Diamonds", "Clubs", "Spades"};
 const string RANKS[] = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
 int DECK[52];
 int currentCardIndex = 0;
 
+//initializing the deck array to have numbers 0-51 at the corresponding indexes
 void initializeDeck() {
     for (int i = 0; i < 52; i++) {
         DECK[i] = i;
